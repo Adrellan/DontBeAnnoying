@@ -10,12 +10,4 @@ import { PriceService } from './service/price.service';
 
 export class AppComponent {
 
-  constructor(
-    private priceService: PriceService,
-  ){
-  }
-
-  setPrice(price: number){
-    this.priceService.setPrice(price);
-  }
 }

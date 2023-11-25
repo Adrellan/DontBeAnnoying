@@ -1,23 +1,13 @@
-.card-panel {
-    position: fixed;
-    right: 0;
-    top: 100px;
-}
-
-.title {
+.container1{
+    width: 100%;
     display: flex;
-    align-items: center;
 }
 
-.title p-image {
-    margin-right: 10px;
+.al-left{
+    float: left;
+    width: 10vw;
 }
 
-.title h1 {
-    margin: 0;
-    text-decoration: underline;
-}
-
-.skeleton{
-    margin: 20px auto;
+.al-right{
+    width: 90vw;
 }

@@ -1,65 +1,11 @@
 <app-navbar></app-navbar>
-
-<div class="card-panel">
-  <p-overlayPanel [style]="{'width': '450px', 'max-height': '500px', 'overflow-y': 'auto'}" #op>
-    <div class="title">
-      <p-image src="./../assets/images/dontbeannoyinglogo.png" alt="Logo" width="50px"></p-image>
-      <h1 [style]="{'color':'red'}">DontBeAnnoying</h1>
+<div class="d-flex container1">
+  <div class="al-left">
+    <app-sidebar></app-sidebar>
+  </div>
+  <div class="al-right">
+    <div class="container">
+      <router-outlet></router-outlet>
     </div>
-    <p-tabView styleClass="tabview-custom">
-      <p-tabPanel>
-        <ng-template pTemplate="header">
-          <i class="pi pi-user" style="margin-right: 5px; font-size: 1em;"></i>
-          <span style="font-size: 1em;">I'm a partner</span>
-        </ng-template>
-        <p-button label="Activate My DontBeAnnoying" styleClass="p-button-rounded p-button-danger" [style]="{'display': 'block', 'margin': '0 auto', 'font-size':'1.5em'}" (onClick)="setPrice(20)"></p-button>
-      </p-tabPanel>
-      <p-tabPanel>
-        <ng-template pTemplate="header">
-          <i class="pi pi-user-plus" style="margin-right: 5px; font-size: 1em;"></i>
-          <span style="font-size: 1em;">I'm new</span>
-        </ng-template>
-
-        <p-button label="Check the Offers" styleClass="p-button-rounded p-button-danger" [style]="{'display': 'block', 'margin': '0 auto'}"></p-button>
-
-        <div class="skeleton">
-          <p-skeleton height="2rem" styleClass="mb-2" borderRadius="16px"></p-skeleton>
-          <div style="display: flex; align-items: center;">
-            <p-skeleton height="3rem" width="300px" borderRadius="16px"></p-skeleton>
-            <p-image src="./../assets/images/leaf.png" alt="Leaf" width="30px"
-              [style]="{'margin-left':'10px'}"></p-image>
-          </div>
-          <p-skeleton width="10rem" height="4rem" borderRadius="16px"></p-skeleton>
-        </div>
-
-        <div class="skeleton">
-          <p-skeleton height="2rem" styleClass="mb-2" borderRadius="16px"></p-skeleton>
-          <div style="display: flex; align-items: center;">
-            <p-skeleton height="3rem" width="300px" borderRadius="16px"></p-skeleton>
-            <p-image src="./../assets/images/leaf.png" alt="Leaf" width="30px"
-              [style]="{'margin-left':'10px'}"></p-image>
-          </div>
-          <p-skeleton width="10rem" height="4rem" borderRadius="16px"></p-skeleton>
-        </div>
-
-        <div class="skeleton">
-          <p-skeleton height="2rem" styleClass="mb-2" borderRadius="16px"></p-skeleton>
-          <div style="display: flex; align-items: center;">
-            <p-skeleton height="3rem" width="300px" borderRadius="16px"></p-skeleton>
-            <p-image src="./../assets/images/leaf.png" alt="Leaf" width="30px"
-              [style]="{'margin-left':'10px'}"></p-image>
-          </div>
-          <p-skeleton width="10rem" height="4rem" borderRadius="16px"></p-skeleton>
-        </div>
-
-
-      </p-tabPanel>
-    </p-tabView>
-  </p-overlayPanel>
-  <p-button (click)="op.toggle($event)" [style]="{'background-color': 'white', 'border': '5px solid red'}">
-    <img src="./../assets/images/dontbeannoyinglogo.png" alt="Logo" width="30" height="30" style="margin-right: 5px;" />
-  </p-button>
-
+  </div>
 </div>
-
-<app-advertistment></app-advertistment>
