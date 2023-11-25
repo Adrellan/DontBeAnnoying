@@ -1,10 +1,21 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { PriceService } from './service/price.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  providers: [PriceService],
+  styleUrls: ['./app.component.scss'],
 })
+
 export class AppComponent {
-  title = 'JustDontBeAnnoying';
+
+  constructor(
+    private priceService: PriceService,
+  ){
+  }
+
+  setPrice(price: number){
+    this.priceService.setPrice(price);
+  }
 }

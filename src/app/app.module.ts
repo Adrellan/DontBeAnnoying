@@ -8,11 +8,14 @@ import { PrimeFacesModule } from 'src/primefaces.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './part/navbar/navbar.component';
+import { AdvertistmentComponent } from './part/advertistment/advertistment.component';
+import { PriceService } from './service/price.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    AdvertistmentComponent,
   ],
   imports: [
     BrowserModule,
@@ -21,7 +24,7 @@ import { NavbarComponent } from './part/navbar/navbar.component';
     PrimeFacesModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [PriceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
