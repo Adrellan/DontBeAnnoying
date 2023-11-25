@@ -1,0 +1,21 @@
+<p-card header="Toshiba Handybook" subheader="The best device #kappa"
+    [style]="{ 'width': '50vw', 'margin-left':'10vw', 'margin-top':'5vh', 'max-height': '10vh' }">
+    <ng-template pTemplate="header">
+        <p-image alt="Card" src="./../../../assets/images/toshiba.png" [style]="{'max-width':'40vw'}"></p-image>
+    </ng-template>
+    <h1 [style]="{'margin-left':'40vw','margin-top':'-5vh', 'color':'red'}">{{ priceService.getPrice() | currency: 'USD':true:'1.2-2'}}</h1>
+    <p>
+        The device is well-suited for watching HD content and can even play FULL HD content when the device is
+        consistently charging. It's a 4G-capable device, and you can also connect to a Wi-Fi network, providing
+        convenient access for your online needs. With a 3.5mm jack input, it's quite handy, especially considering it
+        lacks Bluetooth device control. We recommend it primarily for those who find satisfaction in using Angry Birds
+        and Facebook applications. Additionally, we offer a one-year warranty, which becomes void in the event of damage
+        or failure.
+    </p>
+    <ng-template pTemplate="footer">
+        <div class="add-to-cart">
+            <p-button label="Add to cart" icon="pi pi-shopping-cart"
+                [style]="{'background-color':'red', 'margin-right':'0', 'margin-left':'40vw'}"></p-button>
+        </div>
+    </ng-template>
+</p-card>
