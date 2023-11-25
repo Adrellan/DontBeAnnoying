@@ -67,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "JustDontBeAnnoying:build:production"
+              "buildTarget": "JustDontBeAnnoying:build:production"
             },
             "development": {
-              "browserTarget": "JustDontBeAnnoying:build:development"
+              "buildTarget": "JustDontBeAnnoying:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -78,7 +78,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "JustDontBeAnnoying:build"
+            "buildTarget": "JustDontBeAnnoying:build"
           }
         },
         "test": {
