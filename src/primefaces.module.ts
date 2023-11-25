@@ -36,6 +36,10 @@ import { ChipModule } from 'primeng/chip';
 import { ImageModule } from 'primeng/image';
 import { SkeletonModule } from 'primeng/skeleton';
 import { DividerModule } from 'primeng/divider';
+import { OverlayPanel } from 'primeng/overlaypanel';
+import { OverlayPanelModule } from 'primeng/overlaypanel';
+import { TabMenuModule } from 'primeng/tabmenu';
+import { CardModule } from 'primeng/card';
 
 import { DialogService } from 'primeng/dynamicdialog';
 import { MessageService } from 'primeng/api';
@@ -77,6 +81,9 @@ import { MessageService } from 'primeng/api';
     ImageModule,
     SkeletonModule,
     DividerModule,
+    OverlayPanelModule,
+    TabMenuModule,
+    CardModule,
   ],
   exports: [
     SkeletonModule,
@@ -114,7 +121,10 @@ import { MessageService } from 'primeng/api';
     ImageModule,
     SkeletonModule,
     DividerModule,
+    OverlayPanelModule,
+    TabMenuModule,
+    CardModule,
   ],
-  providers: [DialogService, MessageService, DynamicDialogRef],
+  providers: [DialogService, MessageService, DynamicDialogRef, OverlayPanel],
 })
 export class PrimeFacesModule {}
