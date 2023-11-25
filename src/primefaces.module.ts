@@ -40,6 +40,7 @@ import { OverlayPanel } from 'primeng/overlaypanel';
 import { OverlayPanelModule } from 'primeng/overlaypanel';
 import { TabMenuModule } from 'primeng/tabmenu';
 import { CardModule } from 'primeng/card';
+import { SidebarModule } from 'primeng/sidebar';
 
 import { DialogService } from 'primeng/dynamicdialog';
 import { MessageService } from 'primeng/api';
@@ -84,6 +85,7 @@ import { MessageService } from 'primeng/api';
     OverlayPanelModule,
     TabMenuModule,
     CardModule,
+    SidebarModule,
   ],
   exports: [
     SkeletonModule,
@@ -124,6 +126,7 @@ import { MessageService } from 'primeng/api';
     OverlayPanelModule,
     TabMenuModule,
     CardModule,
+    SidebarModule,
   ],
   providers: [DialogService, MessageService, DynamicDialogRef, OverlayPanel],
 })
