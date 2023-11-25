@@ -1,0 +1,19 @@
+.card-panel {
+    position: fixed;
+    right: 0;
+    top: 100px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title p-image {
+    margin-right: 10px;
+}
+
+.title h1 {
+    margin: 0;
+    text-decoration: underline;
+}

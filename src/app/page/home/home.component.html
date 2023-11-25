@@ -1,0 +1,36 @@
+<div class="card-panel">
+    <p-overlayPanel [style]="{'width': '450px', 'max-height': '500px', 'overflow-y': 'auto'}" #op>
+      <div class="title">
+        <p-image src="./../assets/images/dontbeannoyinglogo.png" alt="Logo" width="50px"></p-image>
+        <h1 [style]="{'color':'red'}">DontBeAnnoying</h1>
+      </div>
+      <p-tabView styleClass="tabview-custom">
+        <p-tabPanel>
+          <ng-template pTemplate="header">
+            <i class="pi pi-user" style="margin-right: 5px; font-size: 1em;"></i>
+            <span style="font-size: 1em;">I'm a partner</span>
+          </ng-template>
+          <p-button label="Activate My DontBeAnnoying" styleClass="p-button-rounded p-button-danger" [style]="{'display': 'block', 'margin': '0 auto', 'font-size':'1.5em'}" (onClick)="setPrice(20)"></p-button>
+        </p-tabPanel>
+        <p-tabPanel>
+          <ng-template pTemplate="header">
+            <i class="pi pi-user-plus" style="margin-right: 5px; font-size: 1em;"></i>
+            <span style="font-size: 1em;">I'm new</span>
+          </ng-template>
+  
+          <p-button label="Check the Offers" styleClass="p-button-rounded p-button-danger" [style]="{'display': 'block', 'margin': '0 auto'}"></p-button>
+  
+          <app-skeleton></app-skeleton>
+          <app-skeleton></app-skeleton>
+          <app-skeleton></app-skeleton>
+  
+        </p-tabPanel>
+      </p-tabView>
+    </p-overlayPanel>
+    <p-button (click)="op.toggle($event)" [style]="{'background-color': 'white', 'border': '5px solid red'}">
+      <img src="./../assets/images/dontbeannoyinglogo.png" alt="Logo" width="30" height="30" style="margin-right: 5px;" />
+    </p-button>
+  
+  </div>
+
+  <app-advertistment></app-advertistment>
